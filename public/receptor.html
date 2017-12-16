@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Medidor de Actividad Socket Receptor </title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <main id="app">
+<header>
+   <nav class="fixed">
+    <a href="#" class="brand-logo center" id="logo"><img :src="logo" alt="ubidots"></a>
+  </nav>
+</header>
+<div class="container A">
+  <svg class="typeRange" height="165" width="330" view-box="0 0 330 165">
+    <g class="scale" stroke="red"></g>
+
+    <path class="outline" d="" />
+    <path class="fill" d="" />
+    <polygon class="needle" points="220,10 300,210 220,250 140,210"/>
+  </svg>
+  <div class="output">30</div>
+</div>
+  <h4><br>
+    <i class="material-icons time">access_alarm</i> {{ time }}
+    <small>Segundos</small><br>
+  </h4>
+  <h5> suma total</h5>
+  <p style="color:skyblue">{{ sumtotal }}</p><br> 
+  <h5 class="status"><i class="material-icons">settings_power</i> Socket {{ status }}</h5>
+</main>
+<footer>
+  <div class="footer-copyright">
+    <div class="container"> 
+    © Dev: Yerlinson Maturana 
+    </div>
+  </div>
+</footer>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>

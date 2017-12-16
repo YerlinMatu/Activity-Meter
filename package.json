@@ -1,0 +1,17 @@
+{
+  "name": "meteractivity",
+  "version": "1.0.0",
+  "description": "Medidor de Actividad Socket ",
+  "main": "server.js ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "start": "nodemon server.js"
+  },
+  "author": "Yerlinson Maturana",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2",
+    "nodemon": "^1.12.7",
+    "socket.io": "^2.0.4"
+  }
+}
